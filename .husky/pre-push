@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+branch_name="$(git symbolic-ref --short HEAD)"
+pattern="^(feature|fix)/[a-z0-9-]+$"
+
+if ! echo "$branch_name" | grep -Eq "$pattern"; then
+  echo "❌ Invalid branch name: $branch_name"
+  echo "✅ Allowed format:"
+  echo "   feature/my-feature"
+  echo "   fix/bug-name"
+  exit 1
+fi
