@@ -17,7 +17,7 @@ const generateDevConfig = async () => {
       return availablePort;
     } catch {
       const nextPort = startingPort + 1;
-      console.log(`Port ${startingPort} is occupied, trying ${nextPort}`);
+      console.error(`Port ${startingPort} is occupied, trying ${nextPort}`);
       return getAvailablePort(nextPort);
     }
   };
