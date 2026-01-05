@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "esModuleInterop" : true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src/",
+    "paths": {
+      "@components/*": ["components/*"]
+    }
+
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
