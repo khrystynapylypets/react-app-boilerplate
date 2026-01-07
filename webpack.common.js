@@ -12,7 +12,7 @@ const commonConfig = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     plugins: [new TsconfigPathsPlugin({
-      configFile: path.resolve(__dirname, "tsconfig.json")
+      configFile: path.resolve(__dirname, 'tsconfig.json')
     })]
   },
   plugins: [

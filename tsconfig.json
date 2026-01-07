@@ -4,6 +4,7 @@
     "target": "ESNext",
     "module": "NodeNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["jest", "node"],
     "strict": true,
     "skipLibCheck": true,
     "moduleResolution": "NodeNext",
@@ -13,11 +14,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src/",
-    "paths": {
-      "@components/*": ["components/*"]
-    }
+    "noFallthroughCasesInSwitch": true
 
   },
   "include": ["src/**/*"],

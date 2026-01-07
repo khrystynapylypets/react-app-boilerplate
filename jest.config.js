@@ -1,4 +1,7 @@
 const config = {
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+  },
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: 'coverage',
@@ -18,11 +21,11 @@ const config = {
         '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less)$': 'identity-obj-proxy',
   },
-  // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.?([mc])[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).?([mc])[jt]s?(x)"
-  // ],
+  testMatch: [
+    "**/__tests__/**/*.?([mc])[jt]s?(x)",
+    "**/?(*.)+(spec|test).?([mc])[jt]s?(x)"
+  ],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
 };
 
 export default config;
