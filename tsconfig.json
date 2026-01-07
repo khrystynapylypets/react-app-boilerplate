@@ -1,13 +1,13 @@
 {
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
+    "target": "es5",
+    "module": "es6",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["jest", "node"],
     "strict": true,
     "skipLibCheck": true,
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "esModuleInterop" : true,
@@ -17,6 +17,6 @@
     "noFallthroughCasesInSwitch": true
 
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "css.module.d.ts"],
   "exclude": ["node_modules", "build"]
 }
