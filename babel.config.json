@@ -13,6 +13,5 @@
       "allExtensions": true,
       "onlyRemoveTypeImports": true
     }]
-  ],
-  "plugins": []
+  ]
 }

@@ -22,7 +22,7 @@ const config = {
         },
         'subject-empty': ({ subject }) => {
           if (!subject) {
-            return [false, 'Commit message must include description after issue number. Example: "feature: Webpack dev configg"']
+            return [false, 'Commit message must include description after issue number. Example: "feature: Webpack dev config"']
           }
 
           return [true];
