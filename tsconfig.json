@@ -14,9 +14,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true
 
   },
-  "include": ["src/**/*", "css.module.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "css.module.d.ts"],
   "exclude": ["node_modules", "build"]
 }

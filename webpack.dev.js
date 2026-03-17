@@ -1,12 +1,10 @@
 import { merge } from 'webpack-merge';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { detect } from 'detect-port';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { commonConfig } from './webpack.common.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 const defaultPort = 3000;
 
 const generateDevConfig = async () => {
