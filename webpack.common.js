@@ -35,6 +35,7 @@ const commonConfig = {
         use: [MiniCssExtractPlugin.loader, {
           loader: 'css-loader',
           options: {
+            importLoaders: 1,
             modules: {
               mode: 'local',
               auto: /\.module\.css$/,
@@ -43,7 +44,7 @@ const commonConfig = {
               namedExport: false
             }
           }
-        }],
+        }, 'postcss-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
