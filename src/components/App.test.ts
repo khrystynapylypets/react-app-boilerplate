@@ -1,5 +1,5 @@
 describe('Fake test', () => {
-  it ('fake test', () => {
-    expect(3).toEqual(3);
-  })
+	it('fake test', () => {
+		expect(3).toEqual(3);
+	});
 });
